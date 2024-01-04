@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown timer</title>
+    <link rel="stylesheet" href="timer.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Countdown timer</h1>
+        <p id="end-date">2024-01-08</p>
+        <p id="end-time">00:00:00</p>
+
+        <div class="clock">
+            <div>
+                <input type="text" class="timer-box" value="0" readonly>
+                <p>DAYS</p>
+            </div>
+            <div>
+                <input type="text" class="timer-box" value="0" readonly>
+                <p>HOURS</p>
+            </div>
+            <div>
+                <input type="text" class="timer-box" value="0" readonly>
+                <p>MINUTES</p>
+            </div>
+            <div>
+                <input type="text" class="timer-box" value="0" readonly>  
+                <p>SECONDS</p>
+            </div>        
+        </div>
+    </div>
+
+    <button id="dateEditter" onclick="dateSelection()">DATE</button>
+    <button id="timeEditter" onclick="timeSelection()">TIME</button>
+
+    <div class="dateBox">
+        <div class="selectDate">
+            <p>CHOOSE DATE</p>  
+            <input type="date" class="calender" placeholder="">
+            <div>
+            <button class="ans" id="okBtn">OK</button>
+            <button class="ans" id="cancelBtn">CANCEL</button>
+            </div>
+        </div>
+
+        <div class="selectTime">
+            <p>CHOOSE TIME</p>
+            <input type="time" class="calender-time">
+            <div>
+                <button class="ans" id="okBtn-time">OK</button>
+                <button class="ans" id="cancelBtn-time">CANCEL</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="timer.js"></script>
+</body>
+</html>
